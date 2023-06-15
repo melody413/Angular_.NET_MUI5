@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\uygulama.simsek.data\uygulama.simsek.data.csproj" />
     <ProjectReference Include="..\uygulama.simsek.services\uygulama.simsek.services.csproj" />
   </ItemGroup>
 

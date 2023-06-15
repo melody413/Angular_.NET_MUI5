@@ -1,6 +1,8 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
+using uygulama.simsek.data.Repository.Tenants.Interfaces;
+using uygulama.simsek.data.Repository.Tenants.Repozitory;
 using uygulama.simsek.services.Common;
 using uygulama.simsek.services.Interfaces;
 
@@ -22,6 +24,9 @@ namespace uygulama.simsek.ioc
 
             //Register services
             services.AddScoped<ITenantService, TenantService>();
+
+            // register repositories
+            services.AddScoped<ITenantRepository, TenantRepository>();
 
 
             return services;

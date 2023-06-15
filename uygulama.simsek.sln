@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uygulama.simsek.ioc", "uygu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uygulama.simsek.dto", "uygulama.simsek.dto\uygulama.simsek.dto.csproj", "{4F10F8B6-5A7F-4A18-9DDB-870AF30DF4D1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uygulama.simsek.data", "uygulama.simsek.data\uygulama.simsek.data.csproj", "{D6070988-0DAD-4FC3-9257-56B81F1502BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{4F10F8B6-5A7F-4A18-9DDB-870AF30DF4D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F10F8B6-5A7F-4A18-9DDB-870AF30DF4D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F10F8B6-5A7F-4A18-9DDB-870AF30DF4D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6070988-0DAD-4FC3-9257-56B81F1502BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6070988-0DAD-4FC3-9257-56B81F1502BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6070988-0DAD-4FC3-9257-56B81F1502BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6070988-0DAD-4FC3-9257-56B81F1502BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,6 +50,7 @@ Global
 		{075EDF55-F88E-469C-B1CE-3746A6CD8F68} = {58658512-2860-4925-AAF6-08EA9AF085F4}
 		{93D4FFEE-1B6B-427F-AE48-18CFE13D50C1} = {58658512-2860-4925-AAF6-08EA9AF085F4}
 		{4F10F8B6-5A7F-4A18-9DDB-870AF30DF4D1} = {58658512-2860-4925-AAF6-08EA9AF085F4}
+		{D6070988-0DAD-4FC3-9257-56B81F1502BB} = {58658512-2860-4925-AAF6-08EA9AF085F4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FD86A904-6EE7-44A7-84D1-4B3D3C37A649}
