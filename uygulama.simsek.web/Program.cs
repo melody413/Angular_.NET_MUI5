@@ -1,6 +1,6 @@
-using System.ComponentModel;
 using System.Text.Json.Serialization;
 
+using uygulama.simsek.automapper;
 using uygulama.simsek.ioc;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,6 +12,8 @@ builder.Services.AddControllersWithViews().AddJsonOptions(x =>
 
 var configuration = builder.Configuration.GetSection("ConnectionStrings");
 var connectionStrings = configuration.GetValue<string>("DefaultConnection");
+
+builder.Services.AddAutoMapper(typeof(MappingProfile));
 
 //Dipendency Injection Module
 IoCContainer.ConfigureIoCContainer(builder.Services, configuration);

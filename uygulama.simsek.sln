@@ -7,13 +7,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{58658512-286
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "uygulama.simsek.web", "uygulama.simsek.web\uygulama.simsek.web.csproj", "{F2109B2F-EA1F-438D-A2D7-121501ECB147}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uygulama.simsek.services", "uygulama.simsek.services\uygulama.simsek.services.csproj", "{075EDF55-F88E-469C-B1CE-3746A6CD8F68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "uygulama.simsek.services", "uygulama.simsek.services\uygulama.simsek.services.csproj", "{075EDF55-F88E-469C-B1CE-3746A6CD8F68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uygulama.simsek.ioc", "uygulama.simsek.ioc\uygulama.simsek.ioc.csproj", "{93D4FFEE-1B6B-427F-AE48-18CFE13D50C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "uygulama.simsek.ioc", "uygulama.simsek.ioc\uygulama.simsek.ioc.csproj", "{93D4FFEE-1B6B-427F-AE48-18CFE13D50C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uygulama.simsek.dto", "uygulama.simsek.dto\uygulama.simsek.dto.csproj", "{4F10F8B6-5A7F-4A18-9DDB-870AF30DF4D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "uygulama.simsek.dto", "uygulama.simsek.dto\uygulama.simsek.dto.csproj", "{4F10F8B6-5A7F-4A18-9DDB-870AF30DF4D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uygulama.simsek.data", "uygulama.simsek.data\uygulama.simsek.data.csproj", "{D6070988-0DAD-4FC3-9257-56B81F1502BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "uygulama.simsek.data", "uygulama.simsek.data\uygulama.simsek.data.csproj", "{D6070988-0DAD-4FC3-9257-56B81F1502BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uygulama.simsek.automapper", "uygulama.simsek.automapper\uygulama.simsek.automapper.csproj", "{3D121185-86FD-4E8B-A168-7A610FF08B7E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{D6070988-0DAD-4FC3-9257-56B81F1502BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6070988-0DAD-4FC3-9257-56B81F1502BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6070988-0DAD-4FC3-9257-56B81F1502BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D121185-86FD-4E8B-A168-7A610FF08B7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D121185-86FD-4E8B-A168-7A610FF08B7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D121185-86FD-4E8B-A168-7A610FF08B7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D121185-86FD-4E8B-A168-7A610FF08B7E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,6 +57,7 @@ Global
 		{93D4FFEE-1B6B-427F-AE48-18CFE13D50C1} = {58658512-2860-4925-AAF6-08EA9AF085F4}
 		{4F10F8B6-5A7F-4A18-9DDB-870AF30DF4D1} = {58658512-2860-4925-AAF6-08EA9AF085F4}
 		{D6070988-0DAD-4FC3-9257-56B81F1502BB} = {58658512-2860-4925-AAF6-08EA9AF085F4}
+		{3D121185-86FD-4E8B-A168-7A610FF08B7E} = {58658512-2860-4925-AAF6-08EA9AF085F4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FD86A904-6EE7-44A7-84D1-4B3D3C37A649}

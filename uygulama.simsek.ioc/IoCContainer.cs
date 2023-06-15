@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Internal;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -20,7 +19,7 @@ namespace uygulama.simsek.ioc
             services.AddScoped<ITenantService, TenantService>();
 
             // register repositories
-            services.AddScoped<ITenantRepository, TenantRepository>();
+          services.AddScoped<ITenantRepo, TenantRepo>();
 
             #region DbContext
             // Configure MSSQL DbContext

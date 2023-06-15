@@ -26,15 +26,17 @@ namespace uygulama.simsek.data.Factories
         {
 
             // tenant db context type
-            string connectionString = _configuration.GetConnectionString("YourConnectionStringName");
+            string activeDatabase = _configuration.GetConnectionString("TenantDatabaseType");
 
-
-
-            return _serviceProvider.GetService<TenantPosgresqlDbContextOption>();
-
-            // configure strongly typed settings object
-            //  services.Configure<AppSettings>(builder.Configuration.GetSection("AppSettings"));
-            throw new NotImplementedException();
+            switch (activeDatabase)
+            {
+                case "MSSQL":
+                    return _serviceProvider.GetService<TenantSqlDbContextOption>();
+                case "PostgreSQL":
+                    return _serviceProvider.GetService<TenantPosgresqlDbContextOption>();
+                default:
+                    throw new InvalidOperationException("Invalid active database type.");
+            }
         }
     }
 }
