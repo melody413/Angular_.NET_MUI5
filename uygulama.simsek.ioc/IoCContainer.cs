@@ -13,7 +13,7 @@ namespace uygulama.simsek.ioc
 {
     public static class IoCContainer
     {
-        public static IServiceCollection ConfigureIoCContainer(IServiceCollection services, IConfigurationSection connectionStrings)
+        public static IServiceCollection ConfigureIoCContainer(IServiceCollection services, IConfiguration configuration)
         {
             //Register services
             services.AddScoped<ITenantService, TenantService>();
@@ -24,11 +24,11 @@ namespace uygulama.simsek.ioc
             #region DbContext
             // Configure MSSQL DbContext
             services.AddDbContext<TenantSqlDbContextOption>(options =>
-                options.UseSqlServer(connectionStrings.GetConnectionString("TenantSqlConnection")));
+                options.UseSqlServer(configuration.GetConnectionString("TenantSqlConnection")));
 
             //Configure PostgreSQL DbContext
             services.AddDbContext<TenantPosgresqlDbContextOption>(options =>
-                options.UseNpgsql(connectionStrings.GetConnectionString("TenantPostgresqlConnection")));
+                options.UseNpgsql(configuration.GetConnectionString("TenantPostgresqlConnection")));
             // register factory method
             services.AddScoped<ITenantDbContextFactory, TenantDbContextFactory>();
             #endregion

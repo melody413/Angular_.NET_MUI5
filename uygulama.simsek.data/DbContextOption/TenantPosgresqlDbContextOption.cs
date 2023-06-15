@@ -6,7 +6,7 @@ namespace uygulama.simsek.data.DbContextOption
 {
     public class TenantPosgresqlDbContextOption : DbContext
     {
-        public TenantPosgresqlDbContextOption(DbContextOptions<TenantSqlDbContextOption> options)
+        public TenantPosgresqlDbContextOption(DbContextOptions<TenantPosgresqlDbContextOption> options)
             : base(options)
         {
         }
