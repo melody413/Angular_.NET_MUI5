@@ -11,7 +11,7 @@ builder.Services.AddControllersWithViews().AddJsonOptions(x =>
                 x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles); ;
 
 var configuration = builder.Configuration.GetSection("ConnectionStrings");
-var connectionStrings = configuration.GetValue<string>("DefaultConnection");
+var connectionStrings = configuration.GetValue<string>("TenantConnection");
 
 builder.Services.AddAutoMapper(typeof(MappingProfile));
 
