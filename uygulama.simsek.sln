@@ -5,7 +5,13 @@ VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{58658512-2860-4925-AAF6-08EA9AF085F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uygulama.simsek.web", "uygulama.simsek.web\uygulama.simsek.web.csproj", "{F2109B2F-EA1F-438D-A2D7-121501ECB147}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "uygulama.simsek.web", "uygulama.simsek.web\uygulama.simsek.web.csproj", "{F2109B2F-EA1F-438D-A2D7-121501ECB147}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uygulama.simsek.services", "uygulama.simsek.services\uygulama.simsek.services.csproj", "{075EDF55-F88E-469C-B1CE-3746A6CD8F68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uygulama.simsek.ioc", "uygulama.simsek.ioc\uygulama.simsek.ioc.csproj", "{93D4FFEE-1B6B-427F-AE48-18CFE13D50C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uygulama.simsek.dto", "uygulama.simsek.dto\uygulama.simsek.dto.csproj", "{4F10F8B6-5A7F-4A18-9DDB-870AF30DF4D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,12 +23,27 @@ Global
 		{F2109B2F-EA1F-438D-A2D7-121501ECB147}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2109B2F-EA1F-438D-A2D7-121501ECB147}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2109B2F-EA1F-438D-A2D7-121501ECB147}.Release|Any CPU.Build.0 = Release|Any CPU
+		{075EDF55-F88E-469C-B1CE-3746A6CD8F68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{075EDF55-F88E-469C-B1CE-3746A6CD8F68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{075EDF55-F88E-469C-B1CE-3746A6CD8F68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{075EDF55-F88E-469C-B1CE-3746A6CD8F68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93D4FFEE-1B6B-427F-AE48-18CFE13D50C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93D4FFEE-1B6B-427F-AE48-18CFE13D50C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93D4FFEE-1B6B-427F-AE48-18CFE13D50C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93D4FFEE-1B6B-427F-AE48-18CFE13D50C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F10F8B6-5A7F-4A18-9DDB-870AF30DF4D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F10F8B6-5A7F-4A18-9DDB-870AF30DF4D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F10F8B6-5A7F-4A18-9DDB-870AF30DF4D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F10F8B6-5A7F-4A18-9DDB-870AF30DF4D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F2109B2F-EA1F-438D-A2D7-121501ECB147} = {58658512-2860-4925-AAF6-08EA9AF085F4}
+		{075EDF55-F88E-469C-B1CE-3746A6CD8F68} = {58658512-2860-4925-AAF6-08EA9AF085F4}
+		{93D4FFEE-1B6B-427F-AE48-18CFE13D50C1} = {58658512-2860-4925-AAF6-08EA9AF085F4}
+		{4F10F8B6-5A7F-4A18-9DDB-870AF30DF4D1} = {58658512-2860-4925-AAF6-08EA9AF085F4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FD86A904-6EE7-44A7-84D1-4B3D3C37A649}
