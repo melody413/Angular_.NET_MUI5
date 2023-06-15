@@ -41,6 +41,8 @@ namespace uygulama.simsek.dto.Tenants
         public bool IsActive { get; set; }
         [MaxLength(500)]
         public string PassiveReason { get; set; }
+        public string ConnectionString { get; set; }
+        public bool IsSharedDataBase { get; set; }
 
         //CreatedBy(userid)
         //CreatedOn(datetime)
