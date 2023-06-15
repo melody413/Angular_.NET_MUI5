@@ -18,7 +18,7 @@ namespace uygulama.simsek.web.Controllers
         }
 
         [HttpPost()]
-        public async Task<IActionResult> InsertColor([FromBody] TenantDto model)
+        public async Task<IActionResult> InsertColor([FromBody] TenantDtoRequest model)
         {
             var res = await this.tenantService.InsertTenant(model);
             return Ok(res);

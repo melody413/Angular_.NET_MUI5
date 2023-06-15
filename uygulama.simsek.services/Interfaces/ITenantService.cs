@@ -10,6 +10,6 @@ namespace uygulama.simsek.services.Interfaces
 {
     public interface ITenantService
     {
-        Task<TenantDto> InsertTenant(TenantDto model);
+        Task<TenantDtoRequest> InsertTenant(TenantDtoRequest model);
     }
 }

@@ -1,17 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Net.NetworkInformation;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-using static System.Runtime.InteropServices.JavaScript.JSType;
+using uygulama.simsek.data.Helpers;
 
-namespace uygulama.simsek.dto.Tenants
+namespace uygulama.simsek.data.Entities.Tenants
 {
-    public class TenantDto
+    public class Tenant:BaseEntity
     {
+        [Required]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         public DateTime CreationDate { get; set; } // user input
         [MaxLength(500)]
@@ -41,12 +38,5 @@ namespace uygulama.simsek.dto.Tenants
         public bool IsActive { get; set; }
         [MaxLength(500)]
         public string PassiveReason { get; set; }
-
-        //CreatedBy(userid)
-        //CreatedOn(datetime)
-        //LastModifiedBy(UserId)
-        //LastModifiedOn(datetime)
-        //DeletedBy(userId)
-        //DeletedOn(datetime)
     }
 }

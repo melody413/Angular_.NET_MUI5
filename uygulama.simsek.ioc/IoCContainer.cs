@@ -1,6 +1,10 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Internal;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
+using uygulama.simsek.data.DbContextOption;
+using uygulama.simsek.data.Factories;
 using uygulama.simsek.data.Repository.Tenants.Interfaces;
 using uygulama.simsek.data.Repository.Tenants.Repozitory;
 using uygulama.simsek.services.Common;
@@ -12,23 +16,23 @@ namespace uygulama.simsek.ioc
     {
         public static IServiceCollection ConfigureIoCContainer(IServiceCollection services, IConfigurationSection connectionStrings)
         {
-            //services.AddDbContext<ApplicationDbContext>(options =>
-            //{
-            //    options.UseSqlServer(connectionStrings.GetValue<string>("DefaultConnection"));
-            //});
-            //services.AddDbContext<PantheonDbContext>(options =>
-            //{
-            //    options.UseSqlServer(connectionStrings.GetValue<string>("PantheonConnection"));
-            //});
-
-
             //Register services
             services.AddScoped<ITenantService, TenantService>();
 
             // register repositories
             services.AddScoped<ITenantRepository, TenantRepository>();
 
+            #region DbContext
+            // Configure MSSQL DbContext
+            services.AddDbContext<TenantSqlDbContextOption>(options =>
+                options.UseSqlServer(connectionStrings.GetConnectionString("TenantSqlConnection")));
 
+            //Configure PostgreSQL DbContext
+            services.AddDbContext<TenantPosgresqlDbContextOption>(options =>
+                options.UseNpgsql(connectionStrings.GetConnectionString("TenantPostgresqlConnection")));
+            // register factory method
+            services.AddScoped<ITenantDbContextFactory, TenantDbContextFactory>();
+            #endregion
             return services;
         }
    }
